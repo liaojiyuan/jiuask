@@ -9,9 +9,14 @@ Page({
     wx.login({
       success: codeInfo => {
         console.log(codeInfo);
+        console.log('success');
         this.setData({
           code: codeInfo.code
         });
+      },
+      fail:codeInfo=>{
+        console.log(condeInfo.code);
+        console.log('fail');
       }
     });
   },
@@ -53,8 +58,13 @@ Page({
           wx.showToast({
             title: response.data.message,
             icon: "none",
-            duration: 1000
+            duration: 2000
           });
+          // wx.showToast({
+          //   title:"",
+          //   icon:"none",
+          //   duration:2000
+          // });
         }
       },
       fail: response => {

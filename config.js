@@ -2,6 +2,6 @@
  * 配置文件
  */
 const config = {
-  serverHost: "https://jiuask.herokuapp.com/"
+  serverHost: "http://localhost:8888/jjwask-server/"
 };
 export default config;
